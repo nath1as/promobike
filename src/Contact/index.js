@@ -40,7 +40,7 @@ return (
       <Text>
          Telefon:
        </Text>
-      <Link> promobike@gmail.com </Link>
+      <Link>041 446 439</Link>
       <Icon />
       <Text>
          Facebook:
