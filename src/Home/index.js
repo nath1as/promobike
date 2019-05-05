@@ -13,10 +13,15 @@ const Container = styled.div`
 `;
 
 const Title = styled.div`
+  padding: 1rem 0;
   font-size: 30px;
+  font-weight: bold;
 `;
 const Home = () =>
 <Container>
+  <Title>
+    Contact us to rent one of our promo bikes:
+  </Title>
   <Title>
     Coffee Bike:
   </Title>

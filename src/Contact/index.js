@@ -1,28 +1,92 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-    width: 100%;
+    width: 40%;
+`;
+const Details = styled.div`
 `;
 const Form = styled.form`
-    width: 100%;
     display: flex;
     flex-direction: column;
 `;
 const Input = styled.input`
-    width: 100%;
     display: flex;
 
 `;
-const Contact = () =>
-<Container>
-  <Form>
-      <Input type="name" placeholder="Ime"/>
-      <Input type="email" placeholder="Elektronska posta"/>
-      <Input type="phone" placeholder="Telefon"/>
-      <Input type="textarea" placeholder="Vase sporocilo"/>
-  </Form>
-</Container>;
+const Text = styled.textarea`
+    display: flex;
+`;
+const Icon = styled.img`
+`;
+const Link = styled.div`
+`;
+
+const Contact = () => {
+const [name, setName] = useState('');
+const [email, setEmail] = useState('');
+const [phone, setPhone] = useState('');
+const [text, setText] = useState('');
+
+return (
+  <Container>
+    <Details>
+      <Icon />
+      <Text>
+         Spletna posta:
+       </Text>
+      <Link> promobike@gmail.com </Link>
+      <Icon />
+      <Text>
+         Telefon:
+       </Text>
+      <Link> promobike@gmail.com </Link>
+      <Icon />
+      <Text>
+         Facebook:
+       </Text>
+       <Link> facebook.com/promobikeslovenija </Link>
+      <Icon />
+      <Text>
+         Instagram:
+       </Text>
+       <Link> instagram.com/promobikeslovenija </Link>
+    </Details>
+    <Form>
+      <Input
+        type="name"
+        value={name}
+        placeholder="Ime"
+        onChange={e => setName(e.target.value)}
+        required
+      />
+      <Input
+        type="email"
+        value={email}
+        placeholder="Elektronska posta"
+        onChange={e => setEmail(e.target.value)}
+        required
+      />
+      <Input
+        type="phone"
+        value={phone}
+        placeholder="Telefon"
+        onChange={e => setPhone(e.target.value)}
+        required
+      />
+      <Text
+        type="textarea"
+        value={text}
+        placeholder="Vase sporocilo"
+        onChange={e => setText(e.target.value)}
+        rows="4"
+        cols="1"
+        required
+      />
+    </Form>
+  </Container>
+  )
+};
 
 export default Contact;
 

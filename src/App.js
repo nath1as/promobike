@@ -15,11 +15,14 @@ const Container = styled.div`
     justify-content: center;
 `;
 const Nav = styled.menu`
-    display: flex;
-    justify-content: space-between;
+  margin-left: -2.5rem;
 `;
 const Body = styled.div`
-    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 `;
 const Head = styled.div`
     display: flex;
