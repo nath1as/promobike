@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+import Logo from './Logo';
 import StyledLink from './StyledLink';
 import Home from './Home';
 import About from './About';
@@ -13,33 +13,27 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 `;
 const Nav = styled.menu`
-    background: red;
     display: flex;
     justify-content: space-between;
-
 `;
 const Body = styled.div`
     max-width: 30%;
-    background: purple;
 `;
 const Head = styled.div`
-    width: 30%;
     display: flex;
     flex-direction: column;
-
 `;
 const App = () =>
 <Router>
   <Container>
     <Head>
-      <Header />
+      <Logo />
       <Nav>
         <StyledLink to="/domov">Domov</StyledLink>
-        <StyledLink to="/o nas">O nas</StyledLink>
         <StyledLink to="/galerija">Galerija</StyledLink>
+        <StyledLink to="/o nas">O nas</StyledLink>
         <StyledLink to="/kontakt">Kontakt</StyledLink>
       </Nav>
     </Head>
