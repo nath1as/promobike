@@ -14,7 +14,8 @@ const Input = styled.input`
     display: flex;
 
 `;
-const Text = styled.textarea`
+const Text = styled.div`
+    font-weight: bold;
     display: flex;
 `;
 const Icon = styled.img`
