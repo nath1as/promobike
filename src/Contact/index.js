@@ -18,6 +18,9 @@ const Text = styled.div`
     font-weight: bold;
     display: flex;
 `;
+const TextArea = styled.div`
+    display: flex;
+`;
 const Icon = styled.img`
 `;
 const Link = styled.div`
@@ -75,7 +78,7 @@ return (
         onChange={e => setPhone(e.target.value)}
         required
       />
-      <Text
+      <TextArea
         type="textarea"
         value={text}
         placeholder="Vase sporocilo"
