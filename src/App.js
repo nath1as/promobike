@@ -24,19 +24,38 @@ const Body = styled.div`
 const Head = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 30%;
+`;
+const Header = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100%;
 `;
 const App = () =>
 <Router>
   <Container>
-    <Head>
-      <Logo />
-      <Nav>
-        <StyledLink to="/domov">Domov</StyledLink>
-        <StyledLink to="/galerija">Galerija</StyledLink>
-        <StyledLink to="/o nas">O nas</StyledLink>
-        <StyledLink to="/kontakt">Kontakt</StyledLink>
-      </Nav>
-    </Head>
+    <Header>
+      <Head>
+        <Logo />
+        <Nav>
+          <StyledLink to="/domov">Domov</StyledLink>
+          <StyledLink to="/galerija">Galerija</StyledLink>
+          <StyledLink to="/o nas">O nas</StyledLink>
+          <StyledLink to="/kontakt">Kontakt</StyledLink>
+        </Nav>
+      </Head>
+    </Header>
     <Body>
       <Route
       path="/domov"
