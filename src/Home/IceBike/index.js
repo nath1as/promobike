@@ -5,8 +5,6 @@ import ice from '../../assets/ice bike/icebike.jpg';
 const Container = styled.div`
     display: flex;
     width: 100%;
-    border: 2px solid black;
-    border-radius: 4px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;

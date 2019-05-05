@@ -12,14 +12,27 @@ const Container = styled.div`
     justify-content: center;
 `;
 
+const Title = styled.div`
+  font-size: 30px;
+`;
 const Home = () =>
 <Container>
+  <Title>
+    Coffee Bike:
+  </Title>
   <CoffeeBike />
+  <Title>
+    Ice Bike:
+  </Title>
   <IceBike />
+  <Title>
+    Soup Bike:
+  </Title>
   <SoupBike />
+  <Title>
+    Trade Bike:
+  </Title>
   <TradeBike />
 </Container>;
 
 export default Home;
-
-

@@ -5,8 +5,6 @@ import trade from '../../assets/trade bike/20258433_1157620601036673_51013773756
 const Container = styled.div`
     display: flex;
     width: 100%;
-    border: 2px solid black;
-    border-radius: 4px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
