@@ -19,7 +19,7 @@ const Nav = styled.menu`
     justify-content: space-between;
 `;
 const Body = styled.div`
-    max-width: 30%;
+    max-width: 50%;
 `;
 const Head = styled.div`
     display: flex;
